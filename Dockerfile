@@ -20,7 +20,7 @@ ENV           LC_ALL en_US.UTF-8
 ENV           HOME /root
 
 #             Install supervisor and create log and config directories
-RUN           apt-get -y install supervisor &&
+RUN           apt-get -y install supervisor && \
               mkdir -p /var/log/supervisor && \
               mkdir -p /etc/supervisor/conf.d
 
